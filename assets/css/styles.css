@@ -39,6 +39,7 @@
 
 .boton_si{
     margin-right: 10px;
+    width: 240px;
 }
 
 .boton_no{
@@ -48,4 +49,24 @@
 .texto{
     width: 500px;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .body{
+        background: #ee9ca7;
+    }
+
+    .texto{
+        width: 300px;
+    }
+
+    .boton_si{
+        width: 140px;
+    }
+
+    .imagen_gato{
+        height: 100%;
+        width: 100%;
+        max-width: 300px;
+    }
 }
