@@ -1,0 +1,51 @@
+.contenedor{
+    display: grid;
+    justify-items: center;
+}
+
+.body{
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contenedor_principal{
+    display: grid;
+    margin-top: 100px;
+}
+
+.contenedor_botones{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px 0;
+}
+
+.imagen_gato{
+    height: 100%;
+    width: 100%;
+}
+
+.boton{
+    background: #fff;
+    border: solid 2px #000;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.boton:hover{
+    background: #cccccc;
+    cursor: pointer;
+}
+
+.boton_si{
+    margin-right: 10px;
+}
+
+.boton_no{
+    margin-left: 10px;
+}
+
+.texto{
+    width: 500px;
+    text-align: center;
+}
