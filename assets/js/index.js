@@ -56,6 +56,7 @@ function propuesta() {
     texto.innerText = "Ya es oficial, te quiero muchisimo mi ñina 🤍";
     imagen.style.display = "none";
     let video = document.createElement("video");
+    console.log(window.innerWidth);
     if (window.innerWidth < 600) {
         video.width = 320;
         video.height = 180;
