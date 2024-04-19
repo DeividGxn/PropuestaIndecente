@@ -34,7 +34,11 @@ function moverBoton() {
 
     boton_no.style.position = "absolute";
     boton_no.style.height = "42.39px";
-    boton_no.style.width = "240px";
+    if (window.innerWidth < 600) {
+        boton_no.style.width = "140px";
+    } else {
+        boton_no.style.width = "240px";
+    }
     
     boton_no.style.left = randomX + 'px';
     boton_no.style.top = randomY + 'px';
@@ -50,11 +54,11 @@ function propuestaIndecente() {
 function propuesta() {
     botones.style.display = "none";
     texto.innerText = "Ya es oficial, te quiero muchisimo mi ñina 🤍";
-    texto.style.width = "960px";
+    texto.style.width = "640px";
     imagen.style.display = "none";
     let video = document.createElement("video");
-    video.width = 960;
-    video.height = 540;
+    video.width = 640;
+    video.height = 360;
     let sourceVideo = document.createElement("source");
     sourceVideo.src = "./assets/img/videoIndecente.mp4"
     sourceVideo.type = "video/mp4";
