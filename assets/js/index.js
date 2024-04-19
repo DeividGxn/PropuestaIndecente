@@ -54,11 +54,17 @@ function propuestaIndecente() {
 function propuesta() {
     botones.style.display = "none";
     texto.innerText = "Ya es oficial, te quiero muchisimo mi ñina 🤍";
-    texto.style.width = "640px";
     imagen.style.display = "none";
     let video = document.createElement("video");
-    video.width = 640;
-    video.height = 360;
+    if (window.innerWidth < 600) {
+        video.width = 320;
+        video.height = 180;
+        texto.style.width = "320px";
+    } else {
+        video.width = 1280;
+        texto.style.width = "1280px";
+        video.height = 720;
+    }
     let sourceVideo = document.createElement("source");
     sourceVideo.src = "./assets/img/videoIndecente.mp4"
     sourceVideo.type = "video/mp4";
